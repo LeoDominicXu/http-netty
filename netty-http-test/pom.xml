@@ -7,28 +7,27 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>netty-http-server</artifactId>
+    <artifactId>netty-http-test</artifactId>
     <packaging>jar</packaging>
 
-    <name>netty-http-server</name>
+    <name>netty-http-test</name>
     <url>http://maven.apache.org</url>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>leo.sunrise.netty</groupId>
+            <artifactId>netty-http-server</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 </project>

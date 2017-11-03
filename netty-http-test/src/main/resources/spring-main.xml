@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+    <bean id="requestMappingHandler" name="requestMappingHandler" class="leo.sunrise.netty.annotation.RequestMappingHandler">
+        <property name="basePackage" value="leo.sunrise.netty"></property>
+    </bean>
+
+    <bean id="httpServer" name="httpServer" class="leo.sunrise.netty.service.HttpServer">
+        <property name="port" value="8080"></property>
+    </bean>
+</beans>
